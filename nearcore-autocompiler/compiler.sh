@@ -3,7 +3,7 @@ set -eu
 # Script settings
 RELEASE=$(lsb_release -c -s)
 # Change this to compile a different
-NEAR_VERSION="1.18.1"
+NEAR_VERSION="1.18.3"
 # Change this to use a different repo
 NEAR_REPO="https://github.com/near/nearcore.git"
 NODE_EXPORTER_REPO="https://github.com/prometheus/node_exporter.git"
