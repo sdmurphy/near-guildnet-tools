@@ -40,6 +40,9 @@ EOF
 
 function get_container
 {
+    sudo lxc stop compiler
+    sudo lxc delete compiler
+    
     echo "* Detected Ubuntu $RELEASE"
     if [ "$RELEASE" == "focal" ]
     then
