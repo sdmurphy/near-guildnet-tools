@@ -63,7 +63,7 @@ sudo cp /tmp/binaries/near* /usr/local/bin
 sudo cp /tmp/binaries/node_exporter /usr/local/bin
 sudo neard --home /home/neard/.near/mainnet init --download-genesis --chain-id mainnet --account-id "$VALIDATOR_ID"
 sudo wget "$GUILDNET_CONFIG_URL" -O /home/neard/.near/mainnet/config.json
-sudo wget "$GUILDNET_GENESIS_URL" -O /home/neard/.near/mainnet/genesis.json
+#sudo wget "$GUILDNET_GENESIS_URL" -O /home/neard/.near/mainnet/genesis.json
 }
 
 function create_exporter_services() 
