@@ -3,7 +3,7 @@ set -eu
 # Script settings
 RELEASE=$(lsb_release -c -s)
 # Change this to compile a different
-NEAR_VERSION="1.19.0"
+NEAR_VERSION="1.21.0"
 # Change this to use a different repo
 NEAR_REPO="https://github.com/near/nearcore.git"
 NODE_EXPORTER_REPO="https://github.com/prometheus/node_exporter.git"
@@ -40,8 +40,8 @@ EOF
 
 function get_container
 {
-    sudo lxc stop compiler
-    sudo lxc delete compiler
+    #sudo lxc stop compiler
+    #sudo lxc delete compiler
 
     echo "* Detected Ubuntu $RELEASE"
     if [ "$RELEASE" == "focal" ]
